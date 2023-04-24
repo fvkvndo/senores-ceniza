@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200;400;600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Assistant, sans-serif;
+}
+
+body {
+    padding-top: 0;
+    background-image: url("../Images/fondo3.jpg_large");
+    background-attachment: fixed;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+.navegadora {
+  background-color: black;
+ font-family: Assistant, sans-serif;
+ color: azure;
+}
+
+.nav-link  {
+    color: azure;
+}
+.navbar-brand {
+    color:bisque;
+}
+
+h1 {
+    color: aliceblue;
+    font-size: 50;
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    color: azure;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+h3 {
+    color: azure;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    color: rgb(147, 184, 184);
+    text-align: left;
+    padding-bottom: 1rem;
+    font-style: oblique;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    color: azure;
+    position: fixed;
+    width: 100%;
+    justify-content: space-around;
+    background-color: black;
+}
+
+.menu-item {
+    text-decoration: none;
+   
+}
+
+
+.info {
+    display: flex;
+    background-color:black;  
+    width: 100% ;
+}
+
+.hoguera {
+    width: 170px;
+    height: 150px;
+    background-attachment: fixed;
+}
+
+p {
+    color: azure;
+    padding: 1rem;
+    padding-left: 0;
+    padding-bottom: 3rem;
+}
+
+.relacionadas {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    flex-wrap: wrap;
+}
+
+.relacionada {
+    padding: 3rem;
+   align-items: center;
+    
+}
+
+.rel-img {
+    width: 270px;
+}
+
+.foot {
+    color: bisque;
+    text-align: center;
+    font-weight: 600;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.contenido-hist {
+    display: flex;
+    padding: 1rem;
+
+}
+.lateral {
+    padding: 1rem;
+    background-color: black;
+    list-style-type: none;
+    color: azure;
+    object-fit: contain;
+    border-style: double;
+    border: 3px solid beige;
+    width: 200px;
+    
+}
+
+.item-lat {
+    border: 2px solid beige;
+    border-style: inherit;
+    padding: 1rem; 
+}
+
+.texto-hist {
+    padding-left: 1rem;
+}
+
+.tarjetitas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-text {
+    color: beige;
+}
+
+.card-body {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.btn-primary {
+    background-color:blanchedalmond;
+    color:brown;
+    border-color: black;
+}
+
+
+.contenedor {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "men npc1 npc2 npc3"
+    "men npc4 npc5 npc6";
+    column-gap: 3rem;
+}
+.men {
+    grid-area: men;
+}
+
+.npc1 {
+    grid-area: npc1;
+}
+.npc2 {
+    grid-area: npc2;
+}
+.npc3 {
+    grid-area: npc3;
+}
+.npc4 {
+    grid-area: npc4;
+}
+.npc5 {
+    grid-area: npc5;
+}
+.npc6 {
+    grid-area: npc6;
+}
+
+@media (orientation:portrait) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "men"
+        "npc1"
+        "npc2"
+        "npc3"
+        "npc4"
+        "npc5"
+        "npc6";
+    }
+}
