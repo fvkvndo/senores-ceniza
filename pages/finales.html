@@ -6,49 +6,104 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Finales / Señores de la Ceniza</title>
+
+    <meta name="description" content="descipción sobre los distintos finales del juego">
+
     <link rel="shortcut icon" href="../Images/bonfiredarksouls.jpg" type="image/png">
-    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="../scss/estilo.css">
 </head>
 
 <body>
-    <header>
-        <div>
-            <nav>
-                <div class="menu">
-                    <a href="../index.html" class="menu-item">Inicio</a>
-                    <a href="./historia.html" class="menu-item">Historia</a>
-                    <a href="./señoresCeniza.html" class="menu-item">Señores de la Ceniza</a>
-                    <a href="./npcs.html" class="menu-item">NPCs</a>
-                    <a href="./finales.html" class="menu-item">Finales</a>
-                    <input type="search" placeholder="Busqueda">
+    <header class="navegadora">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                    href="../index.html">Dark Souls III Wiki</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="../pages/historia.html">Historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="../pages/señoresCeniza.html">Señores de la Ceniza</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="../pages/npcs.html">NPCs</a>
+                        <li class="nav-item">
+                            <a class="nav-link link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+                                href="../pages/finales.html">Finales</a>
+                        </li>
+                        </li>
                     </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Busqueda" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
                 </div>
-            </nav>
-        </div>
+            </div>
+        </nav>
     </header>
     <main>
+        <h1 class="tracking-in-expand">Finales</h1>
         <section class="contenido-hist">
-            <div>
-                <ul class="lateral">
-                    <li class="item-lat"><a href="#enlace">Enlace del fuego</a></li>
-                    <li class="item-lat"><a href="#oscuridad">Era de la Oscuridad</a></li>
-                    <li class="item-lat"><a href="#traicion">Traición</a></li>
-                    <li class="item-lat"><a href="#usurpador">Usurpador de la llama</a></li>
-                </ul>
-            </div>
+
             <div class="texto-hist">
                 <h4 id="enlace">Enlace del fuego</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9oYwUBm6nAU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia perferendis maiores expedita quam vel natus dolor modi aliquid, tenetur a animi facilis iste cupiditate quis. Illo numquam dolore at laboriosam.</p>
+                <div class="vid">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9oYwUBm6nAU"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <p>El No Encendido derrota al Alma de Ceniza y vuelve a encender la Llama. Sólo para sentarse y esperar
+                    a que el siguiente no-encendido perpetúe el Ciclo. Si sobrevivimos, nos convertimos en un Señor de
+                    la Ceniza.</p>
                 <h4 id="oscuridad">Era de la Oscuridad</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9oYwUBm6nAU?start=47" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi praesentium nobis in deleniti natus aliquam illo blanditiis voluptatem odio laborum, nesciunt, excepturi aliquid quaerat ullam non eos rem! Placeat, tenetur?</p>
+                <div class="vid">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9oYwUBm6nAU?start=47"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <p>Primero el Latente encuentra al Guardián del Fuego Ojos y acepta traicionar su deber. El Latente
+                    derrota al Alma de la Ceniza e invoca al Guardián del Fuego. El Guardián del Fuego deja que la Llama
+                    se desvanezca, recordando al Latente que todo esto volverá a repetirse.</p>
                 <h4 id="traicion">Traición</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9oYwUBm6nAU?start=199" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore asperiores, aperiam libero temporibus quam consequatur fuga, culpa neque, consequuntur beatae accusantium vero. Praesentium, deleniti eligendi exercitationem voluptatem soluta amet quos!</p>
+                <div class="vid">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9oYwUBm6nAU?start=199"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <p>Primero el Latente encuentra los ojos de la Guardiana del Fuego y acepta traicionar su deber. El
+                    Latente derrota al Alma de Ceniza e invoca al Guardiana del Fuego. El Guardiana del Fuego deja que
+                    la Llama se desvanezca. El Latente entonces golpea al Guardiana del fuego y toma la Llama para sí
+                    mismo. Se le llama maldito por buscar el fuego egoístamente.</p>
                 <h4 id="usurpador">Usurpador de la llama</h4>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/9oYwUBm6nAU?start=241" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum aliquid esse quia. Repudiandae commodi cupiditate voluptas dolores excepturi sunt iusto fuga deleniti! Magnam tempora quasi porro, ipsam veniam error eum.</p>
+                <div class="vid">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/9oYwUBm6nAU?start=241"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen></iframe>
+                </div>
+                <p>Primero el Latente debe adquirir el máximo número de Marcas Oscuras. Luego debe someterse a un ritual
+                    casándose con Anri, El Latente derrota al Alma de la Ceniza y vuelve a enlazar la Llama. En lugar de
+                    volver a enlazar la Llama, el Latente roba el poder de la Primera Llama para sí mismo y se convierte
+                    en el Señor de los Huecos.</p>
             </div>
         </section>
 
@@ -58,6 +113,13 @@
 
     </main>
     <footer>
+        <div class="logoredes">
+            <h4>Seguime</h4>
+            <a href="https://www.instagram.com/fvck.the.universe/"><img class="img-redes" src="../Images/logoinsta.png"
+                    alt="icono-insta"></a>
+                <a href="https://www.facebook.com/facundo.brinville.10/"><img class="img-redes"
+                        src="../Images/logoface.png" alt="icono-face"></a>
+        </div>
         <div class="foot">
             <a href="./finales.html">Volver</a>
         </div>

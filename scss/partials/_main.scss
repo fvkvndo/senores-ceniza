@@ -1,0 +1,158 @@
+body {
+    padding-top: 0;
+    background-image: url("../Images/fondo3.jpg_large");
+    background-attachment: fixed;
+}
+
+main {
+    padding-top: 5rem;
+}
+
+h1 {
+    color: $colorH1;
+    font-size: 50;
+    text-align: center;
+    font-weight: 800;
+}
+
+h2 {
+    color: $colorH2-3;
+    text-align: center;
+    padding-top: 10rem;
+}
+
+h3 {
+    color: $colorH2-3;
+    text-align: left;
+    padding-bottom: 1rem;
+}
+
+h4 {
+    color: $colorH4;
+    text-align: left;
+    padding-bottom: 1rem;
+    font-style: oblique;
+}
+
+
+.info {
+    display: flex;
+    background-color: black;
+    width: 100%;
+}
+
+.hoguera {
+    width: 170px;
+    height: 150px;
+    background-attachment: fixed;
+}
+
+p {
+    color: azure;
+    padding: 1rem;
+    padding-left: 0;
+    padding-bottom: 3rem;
+}
+
+
+.rel-img {
+    width: 270px;
+}
+
+
+.contenido-hist {
+    display: flex;
+    padding: 1rem;
+    flex-wrap: wrap;
+
+
+    .texto-hist {
+        padding-left: 1rem;
+    }
+
+}
+
+
+
+.img-areas {
+    display: flex;
+    justify-content: center;
+}
+
+.transi {
+    transition: 1s;
+
+    &:hover {
+        transform: scale(200%);
+    }
+
+}
+
+
+.vid {
+    display: flex;
+    justify-content: center;
+}
+
+
+.tarjetitas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    .card-body {
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .card-text {
+            color: beige;
+            text-align: left;
+        }
+    }
+
+
+
+}
+
+.btn-primary {
+    background-color: blanchedalmond;
+    color: brown;
+    border-color: black;
+}
+
+
+.contenedor {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "npc1 npc2 npc3"
+        "npc4 npc5 npc6";
+    column-gap: 3rem;
+    padding: 2rem;
+}
+
+@for $i from 1 through 6 {
+
+    .npc#{$i} {
+        grid-area: npc#{$i};
+    }
+}
+
+
+@media (max-width:480px) {
+    .contenedor {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas:
+            "npc1"
+            "npc2"
+            "npc3"
+            "npc4"
+            "npc5"
+            "npc6";
+    }
+}
